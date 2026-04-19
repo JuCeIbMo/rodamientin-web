@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72" fill="none">
+  
+  <g transform="translate(8,8)">
+    
+    <circle cx="28" cy="28" r="24" stroke="#E85D04" stroke-width="4" fill="none"></circle>
+    
+    <circle cx="28" cy="28" r="14" stroke="#E85D04" stroke-width="3" fill="none"></circle>
+    
+    <circle cx="28" cy="28" r="5" fill="#E85D04"></circle>
+    
+    <rect x="26" y="0" width="4" height="8" rx="1" fill="#E85D04"></rect>
+    <rect x="26" y="48" width="4" height="8" rx="1" fill="#E85D04"></rect>
+    <rect x="0" y="26" width="8" height="4" rx="1" fill="#E85D04"></rect>
+    <rect x="48" y="26" width="8" height="4" rx="1" fill="#E85D04"></rect>
+    
+    <rect x="44" y="8" width="4" height="8" rx="1" fill="#E85D04" transform="rotate(45 46 12)"></rect>
+    <rect x="44" y="40" width="4" height="8" rx="1" fill="#E85D04" transform="rotate(-45 46 44)"></rect>
+    <rect x="8" y="8" width="4" height="8" rx="1" fill="#E85D04" transform="rotate(-45 10 12)"></rect>
+    <rect x="8" y="40" width="4" height="8" rx="1" fill="#E85D04" transform="rotate(45 10 44)"></rect>
+    
+    <circle cx="28" cy="15" r="2.5" fill="#111827"></circle>
+    <circle cx="28" cy="41" r="2.5" fill="#111827"></circle>
+    <circle cx="15" cy="28" r="2.5" fill="#111827"></circle>
+    <circle cx="41" cy="28" r="2.5" fill="#111827"></circle>
+    <circle cx="19" cy="19" r="2.5" fill="#111827"></circle>
+    <circle cx="37" cy="37" r="2.5" fill="#111827"></circle>
+  </g>
+  
+  <text x="74" y="44" font-family="&#39;Barlow Condensed&#39;, &#39;Arial Narrow&#39;, sans-serif" font-weight="800" font-size="36" letter-spacing="-0.5" fill="#111827">RODAMIENTIN</text>
+  
+  <rect x="74" y="52" width="236" height="3" rx="1.5" fill="#E85D04"></rect>
+  
+  <text x="74" y="66" font-family="&#39;Barlow&#39;, Arial, sans-serif" font-weight="500" font-size="10" letter-spacing="2" fill="#6B7280">RODAMIENTOS · TARIJA</text>
+</svg>
