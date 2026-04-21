@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rodamientin — Website
 
-## Getting Started
+Sitio web de Rodamientin (rodamientos automotrices en Tarija, Bolivia).
 
-First, run the development server:
+**Stack:** Next.js 16 · React 19 · TypeScript · Tailwind CSS v4
+
+## Rutas
+
+- `/` — Home (hero, categorías, productos destacados)
+- `/catalogo` — Búsqueda y filtro por categoría
+- `/sucursales` — Horarios y ubicaciones
+
+## Desarrollo local
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrí [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build de producción
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Docker
 
-To learn more about Next.js, take a look at the following resources:
+Build y correr con Docker:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+docker build -t rodamientin-web .
+docker run -p 3000:3000 rodamientin-web
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+O con Docker Compose:
 
-## Deploy on Vercel
+```bash
+docker compose up --build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+La imagen usa el output `standalone` de Next.js — final ~150MB sobre `node:20-alpine`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Estructura
+
+```
+app/                 rutas (App Router)
+components/          componentes React (Header, Footer, ProductCard, etc.)
+lib/products.ts      catálogo + tipos
+public/              assets (logos, favicon)
+```
+
+## Deploy
+
+- **Vercel:** conectá el repo en vercel.com (detecta Next.js automáticamente)
+- **Docker:** el `Dockerfile` corre en cualquier host (Fly.io, Railway, Render, VPS, etc.)
